@@ -22,7 +22,8 @@ export interface ButtonConfig
 
 export interface ButtonProps extends BaseButtonProps {
   type: Exclude<ButtonType, "link"> | "link";
-  onClick?: (_event: Event) => void;
+  // eslint-disable-next-line no-unused-vars
+  onClick?: () => void;
   size?: ButtonSize;
   variant?: ButtonVariant;
   isLoading?: boolean;
