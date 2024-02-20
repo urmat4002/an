@@ -32,7 +32,9 @@ export const Filter = () => {
     return converted.join(",");
   };
 
-  const handleFilter = (event: Event) => {
+  const handleFilter = (
+    event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>
+  ) => {
     event.preventDefault();
 
     navigate(`/estates/${searchParams}`);

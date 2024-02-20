@@ -23,7 +23,7 @@ export interface ButtonConfig
 export interface ButtonProps extends BaseButtonProps {
   type: Exclude<ButtonType, "link"> | "link";
 
-  onClick: (
+  onClick?: (
     // eslint-disable-next-line no-unused-vars
     event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>
   ) => void;
