@@ -11,7 +11,7 @@ export const Estates = () => {
   const isOpen = useAppSelector((state) => state.citySlice.isOpen);
   const [estates, setEstates] = useState<ObjectCardProps[]>([]);
   useEffect(() => {
-    fetch("http://209.38.228.54/api/v1/estate")
+    fetch("https://209.38.228.54/api/v1/estate")
       .then((response) => response.json())
       .then((json) => {
         console.log(json.estates);
